@@ -13,3 +13,10 @@ spans.forEach((span, idx) => {
 		span.classList.add('active');
 	}, 750 * (idx+1))
 });
+
+const videoBtn = document.getElementById('video-btn');
+const videoContainer = document.querySelector('.video-container');
+
+videoBtn.addEventListener('click', () => {
+   videoContainer.classList.add('open');
+});
